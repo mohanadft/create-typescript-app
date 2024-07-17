@@ -24,6 +24,7 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
 	{
 		ignores: [
+			"eslint.config.js",
 			"coverage*",
 			"lib",
 			"node_modules",
@@ -54,12 +55,14 @@ export default tseslint.config(
 		],
 		files: ["**/*.js", "**/*.ts"],
 		languageOptions: {
-			parserOptions: {
-				EXPERIMENTAL_useProjectService: {
-					allowDefaultProjectForFiles: ["./*.*s", "eslint.config.js"],
-					defaultProject: "./tsconfig.json",
-				},
-			},
+			parserOptions: process.env.PROJECT_TRUE
+				? { project: "./tsconfig.eslint.json" }
+				: {
+						EXPERIMENTAL_useProjectService: {
+							allowDefaultProjectForFiles: ["./*.*s", "eslint.config.js"],
+							defaultProject: "./tsconfig.json",
+						},
+				  },
 		},
 		rules: {
 			// These off-by-default rules work well for this repo and we like them on.
