@@ -1,8 +1,8 @@
 import { $ } from "execa";
 
 import {
-	getExistingEquivalentLabels,
 	GhLabelData,
+	getExistingEquivalentLabels,
 } from "./getExistingEquivalentLabels.js";
 import { outcomeLabels } from "./outcomeLabels.js";
 

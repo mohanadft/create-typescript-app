@@ -56,7 +56,7 @@ interface WorkflowFileOptionsBase {
 }
 
 interface WorkflowFileOptionsRuns extends WorkflowFileOptionsBase {
-	runs: (string | WorkflowFileStep)[];
+	runs: (WorkflowFileStep | string)[];
 }
 
 interface WorkflowFileOptionsSteps extends WorkflowFileOptionsBase {

@@ -157,6 +157,7 @@ export function createWorkflows(options: Options) {
 					{
 						uses: "apexskier/github-release-commenter@v1",
 						with: {
+							GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}",
 							"comment-template": `
 							:tada: This is included in version {release_link} :tada:
 
@@ -167,7 +168,6 @@ export function createWorkflows(options: Options) {
 
 							Cheers! 📦🚀
 						`,
-							GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}",
 						},
 					},
 				],

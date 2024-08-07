@@ -115,7 +115,7 @@ describe("createESLintConfig", () => {
 				import markdown from "eslint-plugin-markdown";
 				import n from "eslint-plugin-n";
 				import packageJson from "eslint-plugin-package-json/configs/recommended";
-				import perfectionist from "eslint-plugin-perfectionist";
+				import perfectionistNatural from "eslint-plugin-perfectionist/configs/recommended-natural";
 				import * as regexp from "eslint-plugin-regexp";
 				import vitest from "eslint-plugin-vitest";
 				import yml from "eslint-plugin-yml";
@@ -145,7 +145,7 @@ describe("createESLintConfig", () => {
 				  jsdoc.configs["flat/recommended-typescript-error"],
 				  n.configs["flat/recommended"],
 				  packageJson,
-				  perfectionist.configs["recommended-natural"],
+				  perfectionistNatural,
 				  regexp.configs["flat/recommended"],
 				  ...tseslint.config({
 				    extends: [
@@ -185,7 +185,7 @@ describe("createESLintConfig", () => {
 				        "error",
 				        {
 				          order: "asc",
-				          partitionByComment: true,
+				          "partition-by-comment": true,
 				          type: "natural",
 				        },
 				      ],

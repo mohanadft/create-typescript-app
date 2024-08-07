@@ -4,8 +4,8 @@ import chalk from "chalk";
 import { filterPromptCancel } from "../prompts.js";
 import { Options, OptionsBase } from "../types.js";
 import {
-	exclusionDescriptions,
 	ExclusionKey,
+	exclusionDescriptions,
 	exclusionKeys,
 	getExclusions,
 } from "./exclusionKeys.js";

@@ -6,8 +6,8 @@ import { createDotGitHubIssueTemplate } from "./issueTemplate.js";
 
 export async function createDotGitHub(options: Options) {
 	return {
-		actions: createDotGitHubActions(),
 		ISSUE_TEMPLATE: createDotGitHubIssueTemplate(options),
+		actions: createDotGitHubActions(),
 		workflows: createWorkflows(options),
 		...(await createDotGitHubFiles(options)),
 	};

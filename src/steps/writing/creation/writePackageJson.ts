@@ -33,7 +33,7 @@ export async function writePackageJson(options: Options) {
 	const existingPackageJson =
 		((await readFileSafeAsJson(
 			"./package.json",
-		)) as null | PartialPackageData) ?? {};
+		)) as PartialPackageData | null) ?? {};
 
 	return await formatJson({
 		// If we didn't already have a version, set it to 0.0.0
