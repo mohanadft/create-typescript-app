@@ -132,7 +132,7 @@ export const allArgOptions = {
 		type: "boolean",
 	},
 	"exclude-lint-regex": {
-		description: `Don't add eslint-plugin-regex to enforce good practices around 
+		description: `Don't add eslint-plugin-regexp to enforce good practices around 
   regular expressions.`,
 		docsSection: "opt-out",
 		type: "boolean",

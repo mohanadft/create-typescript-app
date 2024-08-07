@@ -73,7 +73,7 @@ export const exclusionDescriptions: Record<ExclusionKey, ExclusionDescription> =
 		excludeLintRegex: {
 			hint: "--exclude-lint-regex",
 			label:
-				"Include eslint-plugin-regex to enforce good practices around regular expressions.",
+				"Include eslint-plugin-regexp to enforce good practices around regular expressions.",
 			level: "common",
 		},
 		excludeLintSpelling: {

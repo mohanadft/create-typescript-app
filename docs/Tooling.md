@@ -279,7 +279,7 @@ This plugin is quite particular -perfectionist, even- but all its rules include 
 
 ### Lint Regex
 
-[`eslint-plugin-regex`](https://github.com/gmullerb/eslint-plugin-regex): Detects issues with JavaScript regular expressions, such as potential exponential complexity.
+[`eslint-plugin-regexp`](https://github.com/ota-meshi/eslint-plugin-regexp): Detects issues with JavaScript regular expressions, such as potential exponential complexity.
 
 ### Lint Spelling
 
